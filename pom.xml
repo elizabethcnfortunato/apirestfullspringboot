@@ -71,7 +71,13 @@
 		</dependency>
 		
 		
+		<!--  FlyWay -->
 		
+		<dependency>
+			<groupId>org.flywaydb</groupId>
+			<artifactId>flyway-core</artifactId>
+		</dependency>
+	
 		
 	</dependencies>
 	
