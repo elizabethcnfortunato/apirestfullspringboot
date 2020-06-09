@@ -6,6 +6,8 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 public class PasswordUtils {
 	
+	
+	
 	private static final Logger log = LoggerFactory.getLogger(PasswordUtils.class);
 	
 	public PasswordUtils() {
@@ -21,12 +23,12 @@ public class PasswordUtils {
 	
 	
 	public static String gerarBCrypt(String senha) {
-		if(senha == null) {
+	if(senha == null) {
 			return senha;
-		}
+	}
 		
 		
-		log.info("Gerando hash com o BCrypt.");
+	log.info("Gerando hash com o BCrypt.");
 		BCryptPasswordEncoder byCryptEncoder = new BCryptPasswordEncoder();
 		return byCryptEncoder.encode(senha);
 	}
